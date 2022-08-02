@@ -1,0 +1,8 @@
+body{
+  background: linear-gradient(90deg, #06beb6, #48b1bf);
+}
+
+.completed{
+  text-decoration: line-through;
+  color: lightgray;
+}

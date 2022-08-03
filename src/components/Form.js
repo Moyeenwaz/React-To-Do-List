@@ -50,7 +50,7 @@ const Button = styled.button`
     background: lightblue;
   }
 `
-const Form = ({inputText, setInputText, todos, setTodos}) => {
+const Form = ({inputText, setInputText, todos, setTodos, setStatus, status}) => {
   
   const inputTextHandler = e => {
     setInputText(e.target.value)
@@ -63,6 +63,12 @@ const Form = ({inputText, setInputText, todos, setTodos}) => {
     ])
     setInputText('');
   }
+
+  const statusHandler = e => {
+    setStatus (e.target.value)
+    console.log(e.target.value)
+
+  }
   return (
     <FormContainer>
       <div>
@@ -70,7 +76,7 @@ const Form = ({inputText, setInputText, todos, setTodos}) => {
       <Button onClick={submitTodoHandler}>&#43;</Button>
       </div>
       <div>
-        <Select name="todos" id="">
+        <Select onChange = {statusHandler} name="todos" id="">
           <Option value="all">All</Option>
           <Option value="completed">Completed</Option>
           <Option value="uncompleted">Uncompleted</Option>

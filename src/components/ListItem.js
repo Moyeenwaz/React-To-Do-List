@@ -2,7 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Item = styled.div`
-  width: 35vw;
+  max-width: 35vw;
+  width: 500px;
   margin-top: 20px;
   display: flex;
   justify-content: space-between;

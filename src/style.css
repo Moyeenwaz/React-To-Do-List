@@ -1,5 +1,6 @@
 body{
   background: linear-gradient(90deg, #06beb6, #48b1bf);
+  font-family: 'Inter', sans-serif;
 }
 
 .completed{
